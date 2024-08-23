@@ -1,93 +1,106 @@
-body{
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 0;
-    margin: 0;
+body {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
 }
 
-header{
-    padding: 10px;
-    background-color: rgb(228, 227, 227);
+header {
+  padding: 10px;
+  background-color: rgb(228, 227, 227);
 }
-header h1{
-    font-size: 40px;
-    text-align: center;
-    font-family: "Grey Qo", cursive;
-    font-weight: 400;
-    font-style: normal;
+header h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-header ul{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
+header ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
 }
-header li{
-    list-style: none;
-    cursor: pointer;
-    border: 1px solid rgb(175, 175, 175);
-    padding: 10px;
-    border-radius: 10px;
+header li {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 10px;
+  border-radius: 10px;
 }
-header li:hover{
-    transform: scale(1.1);
-}
-
-img{
-    max-width: 100%;
-    height: auto;    
+header li:hover {
+  transform: scale(1.1);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-.grids,.world-menu,.U-S,.business-menu,.athletic-menu{
+.grids,
+.world-menu,
+.U-S,
+.business-menu,
+.athletic-menu {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(248, 248, 247);
+  gap: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.grid,
+.U-S div,
+.world-menu div,
+.business-menu div,
+.athletic-menu div {
+  border: 1px solid rgb(175, 175, 175);
+  padding: 15px;
+  border-radius: 10px;
+}
+span {
+  font-weight: bold;
+}
+
+.currency {
+  text-align: end;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.currency-span {
+  text-align: end;
+  padding: 15px;
+  margin: 10px;
+}
+
+.U-S,
+.world-menu,
+.business-menu,
+.athletic-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .grids,
+  .U-S,
+  .business-menu,
+  .world-menu,
+  .athletic-menu {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
     padding: 10px;
-    margin: 10px;
-    background-color:rgb(248, 248, 247);
-    gap: 15px;
-
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.grid,.U-S div,.world-menu div,.business-menu div,.athletic-menu div{
-    border: 1px solid rgb(175, 175, 175);
-    padding: 15px;
-    border-radius: 10px;
-}
-span{
-    font-weight: bold;
-}
-
-.currency{
-    text-align: end;
-    font-size: 20px;
-    line-height: 1.6;
-}
-.currency-span{
-    text-align: end;
-    padding: 15px;
-    margin: 10px;
-}
-
-
-.U-S,.world-menu,.business-menu,.athletic-menu{
+    margin-top: 10px;
+  }
+  .U-S,
+  .business-menu,
+  .world-menu,
+  .athletic-menu {
     display: none;
-}
-
-
-@media (max-width:700px){
-    .grids,.U-S,.business-menu,.world-menu,.athletic-menu{
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        gap: 10px;
-        padding: 10px;
-        margin-top: 10px;
-    }
-    .U-S,.business-menu,.world-menu,.athletic-menu{
-        display: none;
-    }
-
+  }
 }
